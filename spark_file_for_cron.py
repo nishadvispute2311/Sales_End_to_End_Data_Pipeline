@@ -30,10 +30,6 @@ def get_output_dir(dir_name):
     return final_output_dir
 
 # Load CSVs
-# cust_df = spark.read.csv(os.path.join(BASE_DIR, 'csv_consumed_data_kafka', 'yn-customers-0812_data.csv'), header=True, inferSchema=True)
-# product_df = spark.read.csv(os.path.join(BASE_DIR, 'csv_consumed_data_kafka', 'yn-products-0812_data.csv'), header=True, inferSchema=True)
-# orders_df = spark.read.csv(os.path.join(BASE_DIR, 'csv_consumed_data_kafka', 'yn-orders-0812_data.csv'), header=True, inferSchema=True)
-# order_items_df = spark.read.csv(os.path.join(BASE_DIR, 'csv_consumed_data_kafka', 'yn-order_items-0812_data.csv'), header=True, inferSchema=True)
 
 # yn_sales_project_final/csv_consumed_data_kafka/
 cust_df = spark.read.csv(os.path.join(BASE_DIR, 'csv_consumed_data_kafka', 'yn-customers-0812_data.csv'), header=True, inferSchema=True)
