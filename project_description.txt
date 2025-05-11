@@ -1,0 +1,92 @@
+Use Case: Retail Sales Performance Analysis 
+  
+Problem Statement: 
+A retail company wants to analyze its sales performance to gain insights into key areas of improvement and optimization. The company aims to identify trends, patterns, and anomalies in its sales data to make informed business decisions, enhance operational efficiency, and maximize revenue. 
+  
+Dataset: 
+For this use case, the company can use its internal sales database, which includes information such as transaction details, product details, customer demographics, and sales channel data. Additionally, external datasets such as economic indicators, weather data, and competitor information can be integrated to provide comprehensive insights. 
+  
+Key Performance Indicators (KPIs): 
+#1. Sales Revenue: Total revenue generated over a specific period. 
+#2. Sales Growth Rate: Percentage increase or decrease in sales revenue compared to the previous period. 
+#3. Customer Acquisition Cost (CAC): Average cost incurred to acquire a new customer. 
+>>4. Customer Lifetime Value (CLV): Predicted revenue generated from a customer over their lifetime. 
+#5. Average Order Value (AOV): Average monetary value of orders placed by customers. 
+#6. Sales Conversion Rate: Percentage of website visitors or leads that result in completed sales. 
+>>7. Inventory Turnover: Number of times inventory is sold and replaced in a given period. 
+>>8. Gross Margin: Percentage of revenue retained after subtracting the cost of goods sold. 
+>>9. Sales by Region: Distribution of sales across different geographic regions. 
+>>10. Seasonal Sales Trends: Analysis of sales patterns and fluctuations based on seasonal factors. 
+>>churn risk customers
+sales per customer
+top products sold in last 5 mins
+category revenue
+Certainly! Here are some simpler key performance indicators (KPIs) that are easy to calculate and provide quick insights into business performance: 
+  
+For Sales Transactions Dataset: 
+1. Total Sales Revenue: Total amount of revenue generated from all sales transactions. 
+2. Average Order Value (AOV): Average amount spent per transaction. 
+3. Sales Conversion Rate: Percentage of website visitors or leads that result in completed sales. 
+4. Customer Acquisition Cost (CAC): Average cost incurred to acquire a new customer. 
+5. Customer Retention Rate: Percentage of customers who made a repeat purchase within a specific time period. 
+  
+For Customer Data and Product Catalog Datasets: 
+1. Total Number of Customers: Count of unique customers in the dataset. 
+2. Total Number of Products: Count of unique products in the catalog. 
+3. Customer Gender Distribution: Percentage of male and female customers. 
+4. Top Selling Products: Products with the highest sales volume.   
+
+
+--🛒 Total Orders Count of all orders placed 
+--👥 New Customers Count of signups in the time window - last 3 hrs
+--💵 Total Sales Amount Sum of total_amount from orders 
+--📦 Total Items Sold Sum of quantity in order_items 
+--🛍 Total Unique Products Sold Count of distinct product_id 
+--💲 Average Order Value (AOV) Total Sales / Total Orders 
+--Customer Acquisition Cost (CAC): Average cost incurred to acquire a new customer. 
+-- Sales Conversion Rate: Percentage of website visitors or leads that result in completed sales. AVG VALUE
+-- Customer Retention Rate: Percentage of customers who made a repeat purchase within a specific time period.
+--1. Sales Revenue: Total revenue generated over a specific period. 
+--2. Sales Growth Rate: Percentage increase or decrease in sales revenue compared to the previous period.
+--Inventory Turnover: Number of times inventory is sold and replaced in a given period.  
+
+By implementing this data engineering project, the retail company can gain valuable insights into its sales performance, optimize operations, and drive business growth. 
+ 
+Sample Datasets : 
+1. Sales Transactions Dataset: 
+Columns: 
+•	Transaction ID 
+•	Customer ID 
+•	Product ID 
+•	Quantity 
+•	Unit Price 
+•	Timestamp 
+•	Sales Channel (Online/In-store) 
+•	Payment Method 
+Sample Records: 
+| Transaction ID | Customer ID | Product ID | Quantity | Unit Price | Timestamp         | Sales Channel | Payment Method | 
+|----------------|-------------|------------|----------|------------|-------------------|---------------|----------------| 
+| 1              | 1001        | P123       | 2        | 25.99      | 2024-04-01 09:23  | Online        | Credit Card    | 
+| 2              | 1002        | P456       | 1        | 39.99      | 2024-04-01 12:45  | In-store      | Cash           | 
+| 3              | 1003        | P789       | 3        | 15.50      | 2024-04-02 14:17  | Online        | PayPal         | 
+2. Customer Data Dataset: 
+Columns: 
+•	Customer ID 
+•	Name 
+•	Age 
+•	Gender 
+•	Email 
+•	Phone Number 
+•	Membership Type 
+  
+| Customer ID | Name       | Age | Gender | Email                  | Phone Number  | Membership Type | 
+|-------------|------------|-----|--------|------------------------|---------------|-----------------| 
+| 1001        | John Smith | 35  | Male   | john.smith@example.com | +1234567890  | Gold            | 
+| 1002        | Alice Wong | 28  | Female | alice.wong@example.com | +1987654321  | Silver          | 
+| 1003        | Bob Johnson| 45  | Male   | bob.johnson@example.com| +1122334455  | Bronze          | 
+3. Product Catalog Dataset: 
+Columns: 
+•	Product ID 
+•	Product Name 
+•	Category 
+•	Subcategory 

@@ -1,0 +1,1 @@
+*/10 * * * * cd /app && export JAVA_HOME=/opt/bitnami/java && /opt/bitnami/spark/bin/spark-submit spark_file_for_cron.py >> /var/log/cron.log 2>&1

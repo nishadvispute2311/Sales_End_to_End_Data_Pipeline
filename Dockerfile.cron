@@ -1,0 +1,25 @@
+FROM bitnami/spark:latest
+
+# Switch to root user to install packages
+USER root
+
+# Install cron, python3, and pip
+RUN apt-get update && \
+    apt-get install -y cron python3 python3-pip && \
+    apt-get clean
+
+# Set working directory
+WORKDIR /app
+
+# Copy your project files into the container
+COPY . /app
+
+# Copy and set permissions on the cron job file
+COPY crontab.txt /etc/cron.d/spark-kpi-cron
+RUN chmod 0644 /etc/cron.d/spark-kpi-cron && crontab /etc/cron.d/spark-kpi-cron
+
+# Create log file for cron
+RUN touch /var/log/cron.log
+
+# Start cron and tail the log
+CMD ["sh", "-c", "cron && tail -f /var/log/cron.log"]
